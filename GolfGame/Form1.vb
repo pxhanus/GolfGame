@@ -23,6 +23,23 @@ Public Class Form1
         Next
 
 
+        For row As Integer = 0 To GolfScoreCard.GetLength(1) - 1
+            Static col = 0
+            Dim max = 0
+            Dim maxRow = 0
+            If GolfScoreCard(row, col) > max Then
+                max = GolfScoreCard(row, col)
+                maxRow = row
+                If maxRow = 0 Then
+
+                End If
+            End If
+            col += 1
+        Next row
+
+        Me.lblWinners.Text = 
+
+
     End Sub
     '********************************************************************************************
     'RndInt

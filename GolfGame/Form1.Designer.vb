@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.btnPlayGolf = New System.Windows.Forms.Button()
         Me.lstScores = New System.Windows.Forms.ListBox()
+        Me.lblWinners = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'btnPlayGolf
@@ -44,11 +45,19 @@ Partial Class Form1
         Me.lstScores.Size = New System.Drawing.Size(483, 69)
         Me.lstScores.TabIndex = 1
         '
+        'lblWinners
+        '
+        Me.lblWinners.Location = New System.Drawing.Point(12, 113)
+        Me.lblWinners.Name = "lblWinners"
+        Me.lblWinners.Size = New System.Drawing.Size(483, 151)
+        Me.lblWinners.TabIndex = 2
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(507, 273)
+        Me.Controls.Add(Me.lblWinners)
         Me.Controls.Add(Me.lstScores)
         Me.Controls.Add(Me.btnPlayGolf)
         Me.Name = "Form1"
@@ -58,5 +67,6 @@ Partial Class Form1
     End Sub
     Friend WithEvents btnPlayGolf As System.Windows.Forms.Button
     Friend WithEvents lstScores As System.Windows.Forms.ListBox
+    Friend WithEvents lblWinners As System.Windows.Forms.Label
 
 End Class
