@@ -1,4 +1,8 @@
-﻿Public Class Form1
+﻿'Patricia Hanus
+'151214
+'Golf Game
+'_____________________________________________________________________________
+Public Class Form1
 
     Private Sub btnPlayGolf_Click(sender As Object, e As EventArgs) Handles btnPlayGolf.Click
         Dim GolfScoreCard(3, 8) As Integer
@@ -6,9 +10,18 @@
         For row As Integer = 0 To GolfScoreCard.GetLength(0) - 1
             For col As Integer = 0 To GolfScoreCard.GetLength(1) - 1
                 GolfScoreCard(row, col) = RndInt(1, 9)
-                Me.lstScores.Items.Item(row) = vbTab & GolfScoreCard(row, col)
+
             Next col
         Next row
+
+        For row As Integer = 0 To 3
+            Me.lstScores.Items.Add("Player " & row + 1 & vbTab & GolfScoreCard(row, 0) & vbTab & _
+                                   GolfScoreCard(row, 1) & vbTab & GolfScoreCard(row, 2) & _
+                                   vbTab & GolfScoreCard(row, 3) & vbTab & GolfScoreCard(row, 4) & _
+                                   vbTab & GolfScoreCard(row, 5) & vbTab & GolfScoreCard(row, 6) & _
+                                   vbTab & GolfScoreCard(row, 7) & vbTab & GolfScoreCard(row, 8))
+        Next
+
 
     End Sub
     '********************************************************************************************

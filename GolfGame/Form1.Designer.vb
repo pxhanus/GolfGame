@@ -38,7 +38,7 @@ Partial Class Form1
         'lstScores
         '
         Me.lstScores.FormattingEnabled = True
-        Me.lstScores.Items.AddRange(New Object() {"" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 1" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 2" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 3" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 4" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 5" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 6" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 7" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 8" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 9", "Player 1", "Player 2", "Player 3", "Player 4"})
+        Me.lstScores.Items.AddRange(New Object() {"" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 1" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 2" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 3" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 4" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 5" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 6" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 7" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 8" & Global.Microsoft.VisualBasic.ChrW(9) & "Hole 9"})
         Me.lstScores.Location = New System.Drawing.Point(12, 41)
         Me.lstScores.Name = "lstScores"
         Me.lstScores.Size = New System.Drawing.Size(483, 69)
